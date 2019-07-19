@@ -1,4 +1,4 @@
-TARGET = ccat
+TARGET = recat
 CC = g++
 CFLAGS += -O2
 CFLAGS += -Wall

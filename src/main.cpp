@@ -10,17 +10,17 @@
 #include <vector>
 
 void help() {
-  printf("ccat\n\n"
+  printf("recat\n\n"
          "--help             Print Help\n"
          "--regex <str>      Pattern Matching\n"
          "--fg    <str>      Set the foreground color\n"
          "--bg    <str>      Set the background color\n\n"
 
          "Examples:\n"
-         "  ccat -b blue -r \"root\" /etc/passwd | head -n 10\n"
-         "  ps aux | ccat -b red -r \"root\" | head -n 10\n"
-         "  echo \"bright-red text!\" | ccat -fg \"bright-red\"\n"
-         "  ccat -fg \"red\" -r \"gets\" file.c\n");
+         "  recat -b blue -r root /etc/passwd | head -n 10\n"
+         "  ps aux | recat -b red -r root | head -n 10\n"
+         "  echo \"bright-cyan text!\" | recat -f bright-cyan\n"
+         "  recat -f red -r gets file.c\n");
 
   exit(1);
 }
