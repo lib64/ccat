@@ -12,6 +12,7 @@
 void help() {
   printf("recat - cat with regular expressions and color\n\n"
          "Usage: recat [OPTION]... [FILE]...\n\n"
+         "With no FILE, read standard input.\n\n"
          "--help   -h         Print Help\n"
          "--regex  -r  <str>  Pattern Matching\n"
          "--fg     -f  <str>  Set the foreground color\n"
