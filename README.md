@@ -2,7 +2,7 @@
 cat utillity with regular expressions and color.
 
 ### Help:
-```bash
+```
 recat - cat with regular expressions and color
 
 Usage: recat [OPTION]... [FILE]...
