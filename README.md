@@ -21,3 +21,7 @@ Examples:
 ![example 1](images/example1.png)
 ### Example 2
 ![example 2](images/example2.png)
+### Example 3
+![example 3](images/example3.png)
+### Example 4
+![example 4](images/example4.png)
