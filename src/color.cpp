@@ -1,6 +1,6 @@
 #include "color.h"
 
-#include <iostream>
+#include <cstdio>
 
 Color color_fg_from_str(const std::string &str) {
   Color c;
@@ -35,7 +35,7 @@ Color color_fg_from_str(const std::string &str) {
   } else if (str == "bright-cyan") {
     c = BRIGHT_CYAN_FG;
   } else {
-    std::cout << "error - bad color in color_fg_from_str" << std::endl;
+    printf("error - bad color: %s\n", str.c_str());
   }
   return c;
 }
@@ -73,7 +73,7 @@ Color color_bg_from_str(const std::string &str) {
   } else if (str == "bright-cyan") {
     c = BRIGHT_CYAN_BG;
   } else {
-    std::cout << "error - bad color:" << str << std::endl;
+    printf("error - bad color: %s\n", str.c_str());
     exit(1);
   }
   return c;

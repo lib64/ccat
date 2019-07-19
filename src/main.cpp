@@ -10,12 +10,12 @@
 #include <vector>
 
 void help() {
-  printf("recat\n\n"
-         "--help             Print Help\n"
-         "--regex <str>      Pattern Matching\n"
-         "--fg    <str>      Set the foreground color\n"
-         "--bg    <str>      Set the background color\n\n"
-
+  printf("recat - cat with regular expressions and color\n\n"
+         "Usage: recat [OPTION]... [FILE]...\n\n"
+         "--help   -h         Print Help\n"
+         "--regex  -r  <str>  Pattern Matching\n"
+         "--fg     -f  <str>  Set the foreground color\n"
+         "--bg     -b  <str>  Set the background color\n\n"
          "Examples:\n"
          "  recat -b blue -r root /etc/passwd | head -n 10\n"
          "  ps aux | recat -b red -r root | head -n 10\n"
