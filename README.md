@@ -1,7 +1,15 @@
 # recat
 cat utillity with regular expressions and color.
 
-### Help:
+### install
+```bash
+git clone https://github.com/lib64/recat
+cd recat
+make
+sudo make install
+```
+
+### Help
 ```
 recat - cat with regular expressions and color
 
@@ -21,11 +29,8 @@ Examples:
   recat -f red -r gets file.c
 ```
 
-### Example 1:
+### Examples:
 ![example 1](images/example1.png)
-### Example 2
 ![example 2](images/example2.png)
-### Example 3
 ![example 3](images/example3.png)
-### Example 4
 ![example 4](images/example4.png)
