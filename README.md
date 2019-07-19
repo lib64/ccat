@@ -1,9 +1,9 @@
-# ccat
-colorized cat utillity with regex pattern matching
+# recat
+cat utillity with regular expressions and color.
 
 ### Help:
 ```bash
-ccat
+recat
 
 --help             Print Help
 --regex <str>      Pattern Matching
@@ -11,10 +11,10 @@ ccat
 --bg    <str>      Set the background color
 
 Examples:
-  ccat -b blue -r "root" /etc/passwd | head -n 10
-  ps aux | ccat -b red -r "root" | head -n 10
-  echo "bright-red text!" | ccat -f "bright-red"
-  ccat -f "red" -r "gets" file.c
+  recat -b blue -r root /etc/passwd | head -n 10
+  ps aux | recat -b red -r root | head -n 10
+  echo "bright-cyan text!" | recat -f bright-cyan
+  recat -f red -r gets file.c
 ```
 
 ### Example 1:
