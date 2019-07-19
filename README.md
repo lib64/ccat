@@ -3,12 +3,14 @@ cat utillity with regular expressions and color.
 
 ### Help:
 ```bash
-recat
+recat - cat with regular expressions and color
 
---help             Print Help
---regex <str>      Pattern Matching
---fg    <str>      Set the foreground color
---bg    <str>      Set the background color
+Usage: recat [OPTION]... [FILE]...
+
+--help   -h         Print Help
+--regex  -r  <str>  Pattern Matching
+--fg     -f  <str>  Set the foreground color
+--bg     -b  <str>  Set the background color
 
 Examples:
   recat -b blue -r root /etc/passwd | head -n 10
