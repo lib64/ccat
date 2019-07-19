@@ -7,6 +7,8 @@ recat - cat with regular expressions and color
 
 Usage: recat [OPTION]... [FILE]...
 
+With no FILE, read standard input.
+
 --help   -h         Print Help
 --regex  -r  <str>  Pattern Matching
 --fg     -f  <str>  Set the foreground color
