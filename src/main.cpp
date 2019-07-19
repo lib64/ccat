@@ -17,8 +17,10 @@ void help() {
          "--bg    <str>      Set the background color\n\n"
 
          "Examples:\n"
-         "  echo \"bright-red text!\" | color -fg \"bright-red\"\n"
-         "  cat file.c | color -fg \"red\" -r \"gets\"\n");
+         "  ccat -b blue -r \"root\" /etc/passwd | head -n 10\n"
+         "  ps aux | ccat -b red -r \"root\" | head -n 10\n"
+         "  echo \"bright-red text!\" | ccat -fg \"bright-red\"\n"
+         "  ccat -fg \"red\" -r \"gets\" file.c\n");
 
   exit(1);
 }
