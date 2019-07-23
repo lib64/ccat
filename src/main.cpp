@@ -121,8 +121,7 @@ int main(int argc, char *argv[]) {
       }
 
       if (!regex_flag) {
-        printf("%s%s%s%s", fg_ansi.c_str(), bg_ansi.c_str(), line.c_str(),
-               "\e[0m\n");
+        printf("%s", line.c_str());
       } else {
 
         std::regex r(regex_string);
