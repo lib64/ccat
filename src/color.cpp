@@ -36,6 +36,7 @@ Color color_fg_from_str(const std::string &str) {
     c = BRIGHT_CYAN_FG;
   } else {
     printf("error - bad color: %s\n", str.c_str());
+    exit(1);
   }
   return c;
 }
@@ -80,6 +81,6 @@ Color color_bg_from_str(const std::string &str) {
 }
 
 std::string color_to_ansi(Color c) {
-  std::string s = "\e[" + std::to_string(c) + "m";
+  std::string s = "\x1B[" + std::to_string(c) + "m";
   return s;
 }

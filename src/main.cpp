@@ -89,8 +89,8 @@ int main(int argc, char *argv[]) {
     files.push_back(fname);
   }
 
-  Color fg_color;
-  Color bg_color;
+  Color fg_color = WHITE_FG;
+  Color bg_color = BLACK_BG;
 
   std::string fg_ansi = color_to_ansi(fg_color);
   std::string bg_ansi = color_to_ansi(bg_color);
@@ -125,7 +125,7 @@ int main(int argc, char *argv[]) {
       } else {
 
         std::regex r(regex_string);
-        std::string rep = fg_ansi + bg_ansi + "$&\e[0m";
+        std::string rep = fg_ansi + bg_ansi + "$&\x1B[0m";
         std::string res = std::regex_replace(line, r, rep.c_str());
 
         printf("%s\n", res.c_str());
@@ -154,11 +154,11 @@ int main(int argc, char *argv[]) {
 
         if (!regex_flag) {
           printf("%s%s%s%s", fg_ansi.c_str(), bg_ansi.c_str(), line.c_str(),
-                 "\e[0m\n");
+                 "\x1B[0m\n");
         } else {
 
           std::regex r(regex_string);
-          std::string rep = fg_ansi + bg_ansi + "$&\e[0m";
+          std::string rep = fg_ansi + bg_ansi + "$&\x1B[0m";
           std::string res = std::regex_replace(line, r, rep.c_str());
 
           printf("%s\n", res.c_str());
