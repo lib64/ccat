@@ -4,7 +4,7 @@ CFLAGS += -O2
 CFLAGS += -Wall
 CFLAGS += -Wextra
 CFLAGS += -Werror
-CFlags += -pedantic
+CFLAGS += -pedantic
 
 .PHONY: default all clean
 
